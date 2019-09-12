@@ -5,7 +5,7 @@ import VideoFrame from "../VideoCard/VideoFrame.js"
 
 export default function PhotoInfo() {
     const [ data , setData ] = useState('');
-    const [ date, setDate ] = useState('2019-09-08');
+    const [ date, setDate ] = useState('2019-09-11');
     console.log(data.url)
     // 2019-09-08 = video
     
