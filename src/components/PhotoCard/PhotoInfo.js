@@ -8,7 +8,7 @@ export default function PhotoInfo() {
     const [ date, setDate ] = useState('2019-09-08');
     console.log(data.url)
     // 2019-09-08 = video
-    // &date={date};
+    
     useEffect(() => {
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=gskY9gWJDUCFSaNw236U0r17XpY0E3rXRo4Ca1ko&date=${date}`)
         .then(response => {
@@ -31,7 +31,6 @@ export default function PhotoInfo() {
             explanation={data.explanation}
             copyright={`Copyright: ${data.copyright}`}
             alt={data.title}
-            
             />
         )
     } else {
@@ -47,15 +46,4 @@ export default function PhotoInfo() {
             />
         )
     }
-
-    // return (
-    //     <PhotoCard 
-    //     title={data.title}
-    //     date={data.date}
-    //     img={data.url}
-    //     hdimg={data.hdurl}
-    //     explanation={data.explanation}
-    //     copyright={data.copyright}
-    //     />
-    // )
 }
