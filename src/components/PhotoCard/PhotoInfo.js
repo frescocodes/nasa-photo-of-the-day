@@ -4,10 +4,10 @@ import PhotoCard from "./PhotoCard";
 
 export default function PhotoInfo() {
     const [ data , setData ] = useState('');
-    // const [ date, setDate ] = useState('2019-09-11');
+    const [ date, setDate ] = useState('2019-09-11');
     // &date={date};
     useEffect(() => {
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=gskY9gWJDUCFSaNw236U0r17XpY0E3rXRo4Ca1ko`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=gskY9gWJDUCFSaNw236U0r17XpY0E3rXRo4Ca1ko&date=${date}`)
         .then(response => {
             console.log(response);
             const info = response.data;
