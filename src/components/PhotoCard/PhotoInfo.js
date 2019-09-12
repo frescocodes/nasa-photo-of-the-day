@@ -5,7 +5,8 @@ import VideoFrame from "../VideoCard/VideoFrame.js"
 
 export default function PhotoInfo() {
     const [ data , setData ] = useState('');
-    const [ date, setDate ] = useState('2019-09-11');
+    const [ date, setDate ] = useState('2019-09-08');
+    console.log(data.url)
     // 2019-09-08 = video
     // &date={date};
     useEffect(() => {
@@ -29,12 +30,21 @@ export default function PhotoInfo() {
             hdimg={data.hdurl}
             explanation={data.explanation}
             copyright={`Copyright: ${data.copyright}`}
+            alt={data.title}
             
             />
         )
     } else {
         return (
-            <iframe src={data.url} height="720" width="1280"></iframe>
+            <VideoFrame 
+            title={data.title}
+            date={data.date}
+            img={data.url}
+            hdimg={data.hdurl}
+            explanation={data.explanation}
+            copyright={`Copyright: ${data.copyright}`}
+            title={data.title}
+            />
         )
     }
 

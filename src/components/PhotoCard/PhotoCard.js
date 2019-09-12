@@ -8,7 +8,7 @@ const PhotoCard = props => {
             <h3 className="date">{props.date}</h3>
         </div>
         <div className="image-wrapper">
-            <img src={props.img} className="nasa-img"></img>
+            <img src={props.img} className="nasa-img" alt={props.alt}></img>
         </div>
         <div className="text-wrapper">
             <p className="copyright">{props.copyright}</p>

@@ -11,7 +11,6 @@ function App() {
       </header>
       <section className="daily-section">
         <PhotoInfo />
-
       </section>
       
       
