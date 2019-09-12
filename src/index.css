@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+.card{
+  height: 1000px;
+  width: 700px;
+  background-color: slategrey;
+  color: #fff;
+}
+
+.title {
+
+}
+
+.text-wrapper {
+  width: 90%;
+  margin: auto 5% auto 5%;
+}
+
+.copyright {
+  font-size: .8rem;
+}
+
+.explanation {
+  text-align: left;
+}
+
+.image-wrapper {
+  width: 90%;
+  height: 50%;
+  margin: auto 5% auto 5%;
+}
+
+.image-wrapper img {
+  width: auto;
+  max-height: 500px;
+}
