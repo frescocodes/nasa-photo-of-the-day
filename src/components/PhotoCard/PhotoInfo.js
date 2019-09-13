@@ -3,9 +3,10 @@ import axios from "axios";
 import PhotoCard from "./PhotoCard.js";
 import VideoFrame from "../VideoCard/VideoFrame.js"
 
+
 export default function PhotoInfo() {
     const [ data , setData ] = useState('');
-    const [ date, setDate ] = useState('2019-09-11');
+    const [ date, setDate ] = useState('2019-09-12');
     console.log(data.url)
     // 2019-09-08 = video
     
@@ -20,8 +21,12 @@ export default function PhotoInfo() {
             console.log('broken =>"', error)
         })
     }, [])
-    
-    if (data.media_type === "image") {
+    // Display a loading message while the data is fetching
+    if (!data.title) {
+        return (
+        <h1>Loading...</h1>
+        )
+    } else if (data.media_type === "image") {
         return (
             <PhotoCard 
             title={data.title}
