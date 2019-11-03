@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background: #13131C;
 
+}
+/* secondary #262638 */
+/* accent color #42D97C */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.text-wrapper {
+  width: 90%;
+  margin: auto 5% auto 5%;
+}
+
+.copyright {
+  font-size: .8rem;
+}
+
+.explanation {
+  text-align: left;
+}
+
+.image-wrapper {
+  width: 700px;
+  /* height: 50%; */
+}
+
+.image-wrapper img {
+  width: auto;
 }
